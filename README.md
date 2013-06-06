@@ -17,3 +17,6 @@ install it the first time it would be used.
 See also:
   http://code.google.com/p/zxing/
   https://play.google.com/store/apps/details?id=com.google.zxing.client.android
+
+To build, run:
+$ android update project --path . --name "Loyalty Keyring" && ant debug
