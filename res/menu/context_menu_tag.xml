@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/context_group_edit"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/edit"/>
+    <item
+        android:id="@+id/context_group_rename"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/rename"/>
+    <item
+        android:id="@+id/context_group_delete"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/delete"/>
+
+</menu>

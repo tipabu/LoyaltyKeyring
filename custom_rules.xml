@@ -1,0 +1,22 @@
+<project name="custom-rules">
+	<property name="javadoc.dir" value=""/>
+
+	<target name="-pre-clean" depends="clean-javadoc"/>
+	<target name="-post-build" depends="javadoc"/>
+
+	<target name="clean-javadoc">
+		<delete dir="${javadoc.dir}"/>
+	</target>
+
+	<target name="javadoc">
+		<javadoc
+			access="private"
+			classpath="${sdk.dir}/platforms/${target}/android.jar:libs/android-support-v4.jar"
+			destdir="${javadoc.dir}"
+			source="1.6"
+			sourcepath="${source.dir}">
+
+			<link offline="true" href="http://developer.android.com/reference/" packagelistloc="doc-ref/android-17" />
+		</javadoc>
+	</target>
+</project>
